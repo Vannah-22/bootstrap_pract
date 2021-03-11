@@ -11,7 +11,8 @@ import {
     DropdownToggle,
     DropdownMenu,
     DropdownItem,
-    NavbarText
+    NavbarText,
+    Button
   } from 'reactstrap';
 
   const Example = (props) => {
@@ -20,8 +21,9 @@ import {
     const toggle = () => setIsOpen(!isOpen);
   
     return (
+    <div>
       <div>
-        <Navbar color="light" light expand="md">
+        <Navbar color="dark" dark expand="md">
           <NavbarBrand href="/">reactstrap</NavbarBrand>
           <NavbarToggler onClick={toggle} />
           <Collapse isOpen={isOpen} navbar>
@@ -54,6 +56,28 @@ import {
           </Collapse>
         </Navbar>
       </div>
+
+        <div className="container">
+            <div className="row">
+                <div className="col-sm">
+                    <Button color="primary"> 1st button </Button>
+                </div>
+
+                <div className="col-sm">
+                    <Button color="danger"> 2nd button </Button>
+                </div>
+
+                <div className="col-sm">
+                    <Button color="warning"> 3rd button </Button>
+                </div>
+
+                <div className="col-lg">
+                    <Button color="success"> 4th button </Button>
+                </div>
+            </div>
+        </div>
+    </div>
+    
     );
   }
   
