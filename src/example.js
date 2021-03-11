@@ -40,7 +40,7 @@ import {
                 </DropdownToggle>
                 <DropdownMenu right>
                   <DropdownItem>
-                    Option 1
+                    <a href="https://google.com"> Google </a>
                   </DropdownItem>
                   <DropdownItem>
                     Option 2
@@ -59,19 +59,19 @@ import {
 
         <div className="container">
             <div className="row">
-                <div className="col-sm">
+                <div className="col-12">
                     <Button color="primary"> 1st button </Button>
                 </div>
 
-                <div className="col-sm">
+                <div className="col-12">
                     <Button color="danger"> 2nd button </Button>
                 </div>
 
-                <div className="col-sm">
+                <div className="col-12">
                     <Button color="warning"> 3rd button </Button>
                 </div>
 
-                <div className="col-lg">
+                <div className="col-12">
                     <Button color="success"> 4th button </Button>
                 </div>
             </div>
